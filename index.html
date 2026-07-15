@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>潜意识吸引力解码｜深度人格心理测评</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-tap-highlight-color:transparent}
+body{background:#f5f0eb;color:#2d2a24;min-height:100vh;display:flex;justify-content:center;padding:12px}
+.card{width:100%;max-width:560px;background:#fff;border-radius:20px;padding:28px 20px;box-shadow:0 2px 20px rgba(0,0,0,0.05);border:1px solid #e8e2da;margin:12px auto;position:relative}
+.page{display:none}.page.active{display:block}
+.tag{background:rgba(180,100,180,0.08);color:#9168b0;font-size:10px;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px;font-weight:600;letter-spacing:1px}
+h1{font-size:clamp(20px,5vw,28px);font-weight:800;line-height:1.35;margin-bottom:6px;text-align:center;color:#2d2a24}
+.sub{font-size:13px;color:#9a9188;text-align:center;margin-bottom:18px;line-height:1.7}
+.btn{width:100%;background:linear-gradient(135deg,#c472a2,#9168b0);color:#fff;border:none;padding:14px;border-radius:50px;font-size:14px;font-weight:700;cursor:pointer;transition:all 0.2s}
+.btn:active{transform:scale(0.97)}
+.btn-outline{background:transparent;border:1.5px solid #c472a2;color:#c472a2}
+.btn-sm{padding:10px 18px;width:auto;font-size:13px;border-radius:25px}
+.btn-gray{background:#d5d0c8;color:#6b635a!important;pointer-events:none;opacity:0.5}
+.ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.pt{font-size:12px;color:#9a9188;font-weight:600}
+.pb{height:4px;background:#efede9;border-radius:4px;margin-bottom:16px;overflow:hidden}
+.pf{height:100%;background:linear-gradient(90deg,#c472a2,#9168b0);border-radius:4px;transition:width 0.5s ease;width:0%}
+.qt{font-size:15px;font-weight:600;line-height:1.6;margin-bottom:6px}
+.qs{font-size:11px;color:#9a9188;margin-bottom:12px;padding:3px 10px;background:#f0eeea;border-radius:8px;display:inline-block}
+.op{background:#faf8f5;border:1.5px solid #e8e2da;border-radius:12px;padding:12px 14px;margin-bottom:7px;font-size:13px;cursor:pointer;transition:border-color 0.15s;position:relative;user-select:none}
+.op:hover{border-color:#c472a2;background:rgba(196,114,162,0.03)}
+.op-sel{border-color:#9168b0!important;background:rgba(145,104,176,0.08)!important}
+.op-sel::after{content:"✓";position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#9168b0;font-weight:700;font-size:14px}
+.nv{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
+.sp{width:36px;height:36px;border:3px solid #efede9;border-top:3px solid #c472a2;border-radius:50%;animation:s 0.8s linear infinite;margin:0 auto 16px}
+@keyframes s{to{transform:rotate(360deg)}}
+.lt{font-size:13px;color:#9a9188;text-align:center}
+.rh{text-align:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e8e2da}
+.ri{font-size:38px;margin-bottom:4px}.rt{font-size:18px;font-weight:800;color:#2d2a24}
+.rs{font-size:11px;color:#9a9188;margin-top:2px}
+.rc{display:flex;justify-content:center;gap:10px;margin:12px 0 14px}
+.ri2{text-align:center;min-width:65px}
+.rn{font-size:10px;color:#9a9188;margin-bottom:2px}
+.rbar{width:6px;height:44px;background:#efede9;border-radius:4px;margin:0 auto 2px;position:relative;overflow:hidden}
+.rbf{position:absolute;bottom:0;width:100%;border-radius:4px;transition:height 0.8s}
+.rbf.a{background:#c472a2}.rbf.b{background:#b8860b}.rbf.c{background:#5a8fa5}
+.rv{font-size:11px;font-weight:700;color:#2d2a24}
+.sec{margin:16px 0}
+.st{font-size:13px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:5px;color:#2d2a24}
+.sc{background:#faf8f5;border:1px solid #e8e2da;border-radius:10px;padding:12px 13px}
+.sc p{font-size:12.5px;line-height:1.8;color:#5a534a}
+.sc li{font-size:12.5px;line-height:1.8;color:#5a534a;padding:2px 0 2px 14px;position:relative;list-style:none}
+.sc li::before{content:"▸";position:absolute;left:0;color:#c472a2}
+.qb{background:linear-gradient(135deg,rgba(196,114,162,0.04),rgba(145,104,176,0.04));border:1px solid rgba(196,114,162,0.1);border-radius:10px;padding:12px;margin:14px 0 0;text-align:center}
+.qb p{font-size:12.5px;line-height:1.75;color:#2d2a24;font-style:italic}
+.sb{text-align:center;margin-top:16px;padding-top:12px;border-top:1px solid #e8e2da;display:flex;gap:8px}
+.sb .btn{flex:1;font-size:12px;padding:10px}
+.tip{background:rgba(196,114,162,0.04);border:1px solid rgba(196,114,162,0.1);border-radius:10px;padding:12px 14px;font-size:12px;color:#5a534a;line-height:1.7;margin-bottom:16px}
+.gr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:18px}
+.gi{background:#faf8f5;border:1px solid #e8e2da;border-radius:12px;padding:10px;text-align:center}
+.gi .ic{font-size:20px}.gi .lb{font-size:10px;color:#9a9188;margin-top:3px}
+.lm{text-align:center;padding:60px 20px}
+.lm .lk{font-size:50px;margin-bottom:16px}.lm h2{font-size:20px;margin-bottom:12px}.lm p{font-size:13px;color:#9a9188;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="card" id="app">
+<div class="page active" id="welcome">
+<div class="tag" style="margin:0 auto;display:table">DEEP PERSONALITY ATTRACTION TEST</div>
+<h1>潜意识吸引力解码</h1>
+<p class="sub">六大维度深度分析 · 42道投射题 · 12层人格画像</p>
+<div class="tip">本测评覆盖<strong>人格特质、性格底色、价值观念、决策模式、情感反应、社交风格</strong>六大维度，交叉分析你的深层心理模式。完成约需10-12分钟，建议在安静环境中凭第一直觉作答。</div>
+<div class="gr">
+<div class="gi"><div class="ic">🧠</div><div class="lb">人格特质</div></div>
+<div class="gi"><div class="ic">🎨</div><div class="lb">性格底色</div></div>
+<div class="gi"><div class="ic">⚖️</div><div class="lb">价值观念</div></div>
+<div class="gi"><div class="ic">🔄</div><div class="lb">决策模式</div></div>
+<div class="gi"><div class="ic">💞</div><div class="lb">情感反应</div></div>
+<div class="gi"><div class="ic">🌐</div><div class="lb">社交风格</div></div>
+</div>
+<button class="btn" id="startBtn">开始深度解码 →</button>
+<p style="font-size:11px;color:#b5aea5;text-align:center;margin-top:12px">本次测试结果仅你可见 · 请凭直觉作答</p>
+</div>
+
+<div class="page" id="quiz">
+<div class="ph"><span class="pt" id="pt">Q. 01 / 42</span><span class="pt" id="pp">0%</span></div>
+<div class="pb"><div class="pf" id="pf"></div></div>
+<div class="qs" id="qcat"></div>
+<div class="qt" id="qt"></div>
+<div id="og"></div>
+</div>
+
+<div class="page" id="loading">
+<div style="padding:50px 0;text-align:center"><div class="sp"></div><div class="lt" id="lt">分析你的人格特质...</div></div>
+</div>
+
+<div class="page" id="result">
+<div class="rh"><div class="ri" id="ri"></div><div class="rt" id="rt"></div><div class="rs" id="rtype"></div></div>
+<div class="rc" id="srow"></div>
+<div id="resultContent"></div>
+<div class="sb"><button class="btn btn-sm" id="shareBtn">📤 保存报告</button><button class="btn btn-sm btn-outline" onclick="location.reload()">🔄 重新测试</button></div>
+</div>
+</div>
+
+<script>
+
+var q=[],ans=[],sc={A:0,B:0,C:0},catSc={},idx=0;
+var labels={0:"A",1:"B",2:"C"};
+var cn={P:"人格特质",T:"性格底色",V:"价值观念",D:"决策模式",E:"情感反应",S:"社交风格"};
+
+var rd={
+A:{
+nm:"灵魂同行者",tg:"Soul Explorer",tp:"感受型 · 理想主义者",ic:"🌌",
+bg5:"【开放性】极高——你天生被抽象、美学和超越经验的事物吸引。大五人格理论中高开放性与创造力、审美敏感性正相关。你大脑默认模式网络异常活跃——即使放空时也在进行丰富的内在叙事。\n【尽责性】中等偏低——不喜欢被规则捆绑，但对自己在意的事情有极高标准。\n【外向性】中等——你需要的是深度而非数量。约30%的人属于高敏感类型，从深度而非广度获取能量。\n【宜人性】偏高——你对他人情绪高度敏感，共情是你的超能力也是你的负担。\n【神经质】中等偏高——敏感让你感受到更丰富的情绪光谱，但也更容易被负面情绪淹没。",
+qt:"你的气质类型属于抑郁质+多血质混合型——高情绪感受力叠加高探索欲。Eysenck气质理论中，这种组合的特点是情绪不稳定(神经质偏高)×外向探索倾向。你的性格底色：诗意的脆弱——像高精度感光胶片，捕捉世界最细腻的光影，也容易被划伤。\n\n心理学研究发现HSP(高敏感人群)约占15-20%，这并非缺陷而是进化多样性策略。",
+v:"核心价值观：真实体验。你无法忍受公式化的生活和虚伪的人际关系。你的价值坐标系：真实>得体，深度>广度，感受>逻辑，自由>稳定。自我决定理论(Ryan & Deci, 2000)指出，当人的行为与核心价值观一致时会产生最高的心理幸福感。",
+ds:"你的决策以直觉驱动(系统1)为主导。Kahneman双系统理论指出：系统1处理大部分日常决策，系统2只在必要时介入。优势：你能感知别人忽略的信号。劣势：情绪波动时直觉可能被扭曲。建议重大决策冷却24小时再用理性审视。",
+ea:"你的依恋偏向恐惧型依恋(fearful-avoidant)。Bowlby理论指出该模式源于早期亲密与伤害的共存。你能捕捉所有微妙变化然后大脑编织故事。好消息是：持续的安全关系经验可以重塑内部工作模型(Mikulincer & Shaver, 2007)。",
+ar:"你的多巴胺奖赏系统对精神新颖性高度敏感。当两个人默认模式网络出现同步时，产生的吸引力远超外表条件。镜像神经元实验表明，精神频率相近时右前岛叶和前扣带皮层被激活——深层共情的标志。",
+ri:"你是关系中的情绪温度计。你的爱通过深刻暗示表达。Gottman研究：冲突本身不致命，致命的是回避。关系质量取决于修复尝试的成功率。你的成长是从被懂到主动解释。",
+lit:"林黛玉(《红楼梦》)——用敏感织成网。伊丽莎白·班内特(《傲慢与偏见》)——渴望共鸣但保持警觉。1900(《海上钢琴师》)——独特审美密码。小王子和玫瑰——《小王子》",
+bl:"过度理想化——将现实落差解读为对方变了|情绪投射——对方累了，你解读成关系出问题|迷恋深刻陷阱——忽视平淡珍贵|能量透支——被他人情绪卷入消耗",
+adv:"区分对方情绪和你的投射|用\"我感受到因为\"句式代替逃离|不要收掉太敏感的部分|接受爱情里的平凡时刻|建立情绪边界",
+pair:"【灵魂共鸣型】性格：敏感细腻、有灵气、精神追求高于物质。文学原型：林黛玉、1900、伊丽莎白·班内特\n\n【现实压舱石】TA是你情绪锚点，TA对秩序的需求不是无趣是爱。\n\n【并肩成长者】TA用理性刺激你突破边界——但关系不只是进步。",
+qo:"最重要的感情，是两个人能一起活在同一个梦境里。||只有用心去看才能看得真切。||爱不是相互凝视，而是一起朝同一个方向看。"
+},
+B:{
+nm:"现实压舱石",tg:"Solid Anchor",tp:"务实型 · 稳定主义者",ic:"⚓",
+bg5:"【开放性】中等偏低——偏好熟悉和可预测。\n【尽责性】极高——最预测成就的维度。\n【外向性】中等——倾向功能性社交。\n【宜人性】偏高——乐于付出和承担。\n【神经质】中等——通过计划和秩序缓解焦虑，这是积极应对策略。",
+qt:"粘液质+多血质混合型——高稳定性叠加温和探索欲。性格底色：沉默的笃定——像河边的树，根系深入枝叶不张扬。你是很多人想依靠的人。",
+v:"核心价值观：责任与秩序。付出才有回报，规则保护大多数人。你的生命是关于守护的史诗——你把世界撑稳让别人跳舞。Schwartz价值观理论中安全/遵从价值观高的人社会适应性更高。",
+ds:"系统分析(系统2)为主导——先收集信息再评估。优势是执行力极强。劣势是过度分析可能错失时机。建议80%日常用满意原则，偶尔让自己做一次基于感受的决定。",
+ea:"安全型依恋为主。你相信值得被爱也相信别人可靠。你的爱的语言是服务的行动。唯一留意：太擅长撑住可能让对方以为你不需要被照顾。Gottman说暴露脆弱不是弱点而是建立信任的捷径。",
+ar:"可靠性为核心吸引力。进化心理学中可靠性对关系满意度的预测力远超外表。你的关键词：可依赖>刺激感，共同方向>即时火花，行动>言语。",
+ri:"结构提供者——搭建稳定框架。你的爱是让对方生活变好。Gottman爱的五种语言理论：你的是服务的行动，你可能期待肯定的言语。",
+lit:"山姆怀斯·甘姆吉(《魔戒》)——信仰般的忠诚。罗恩·韦斯莱(《哈利·波特》)——关键时刻不掉链子。简·爱(《简·爱》)——坚定原则。尼采——凡不能毁灭我的必使我强大。",
+bl:"过度承担——健康关系需要共同负重|情感表达不足——对方需要听见|抗拒变化——系统被打乱会不安|隐性控制——用我来处理包裹期待",
+adv:"让别人照顾你|每周做只快乐不有用的事|先说再证明|接受计划外事|偶尔选择没理由的事",
+pair:"【同行伴侣型】靠谱踏实有责任心。文学原型：山姆怀斯、罗恩、简·爱。核心：彼此信任共同承担\n\n【同类支撑型】小心不要活成工作合伙人\n\n【互补感性开拓者】TA教会你不所有冒险都没意义",
+qo:"真正的英雄主义是在认清生活真相后依然热爱生活。||平凡生活中最大的浪漫是有人陪你一起变老。||爱不是相互凝视是一起朝同一个方向看。"
+},
+C:{
+nm:"并肩成长者",tg:"Growth Partner",tp:"思考型 · 独立主义者",ic:"🔥",
+bg5:"【开放性】高——为经过验证的新知买单。\n【尽责性】中等偏高——致力于对的事而非该做的事。\n【外向性】偏内向——社交是消耗。\n【宜人性】中等——中等宜人性在需坚持立场的领域表现更好。\n【神经质】偏低——情绪管理系统良好。",
+qt:"胆汁质+粘液质混合型——高活动性叠加高稳定性。性格底色：清醒的孤独。认知闭合需求(Need for Cognitive Closure)可以解释你——亲密关系本身就是模糊的。",
+v:"核心价值观：成长与独立。宁可痛苦地清醒不要幸福地麻木。最重要关系是和自己的关系。尼采：人宁可追求虚无也不能无所追求。",
+ds:"理性战略分析——先理清为什么再决定怎么做。优势是抽象思维。劣势是过度追求最优解。建议80%用满意原则。",
+ea:"疏离-回避型(dismissive-avoidant)。享受亲密但需要大量空间。研究发现在压力下回避型个体会增加亲密距离——这是自我调节策略。",
+ar:"被认知挑战和边界感良好的连接吸引。高认知需求者择偶时对方思维方式比外表更具吸引力。最性感的时刻是对方专注在自己世界里的神情。",
+ri:"认知刺激者——用观点碰撞保持活力。Gottman研究中最经典的破坏模式是批判vs防卫。区分情感分享和需要解决的问题是你最重要的成长。",
+lit:"达西先生(《傲慢与偏见》)——不以大众期待的方式关心。赫敏·格兰杰(《哈利·波特》)——理性不是一切答案。福尔摩斯——《福尔摩斯》。斯内普——《哈利·波特》",
+bl:"理性化防御——让对方觉得你在处理而非感受|过度独立——拒绝需要是害怕被拒绝|情感后知后觉|边界僵化——挡住真正在乎的人",
+adv:"先说理解感受不是分析|推开冲动时停顿10秒问自己真正需要什么|允许没有理由的依靠|定期零目标约会|学习情感语言",
+pair:"【精神对手型】独立思考有求知欲尊重边界。文学原型：达西先生、赫敏、福尔摩斯。核心：各自专注但深夜能高质量对话\n\n【互补感性型】TA教你柔软你提供方向\n\n【同类巅峰型】互相见证彼此跃迁——一起在山顶看星星也很重要",
+qo:"爱不是找到完美的人而是学会用不完美的眼光看见完美。||我们只有孤独地活着才能真正地相爱。||当爱不再是需求的满足而是创造力的表达时爱才有自由。"
+}
+};
+
+var data=[
+["P","周末你更倾向于？","和三五好友聚会或参加活动|在家整理、做计划和复盘|一个人沉浸在自己的兴趣里"],
+["P","面对新环境时你通常？","先观察感受再慢慢融入|主动认识人、摸清规则|找到一两个志同道合的人深交"],
+["P","别人最常怎么形容你？","细腻感性、很有灵气|靠谱稳重、值得信赖|聪明独立、有自己想法"],
+["P","你的能量更多来自？","和他人深度交流后充电|把生活安排得井井有条|沉浸在自己的精神世界里"],
+["P","面对不确定性时？","跟随直觉和当下的感受|制定计划并按步骤推进|分析各种可能性后做判断"],
+["P","你觉得自己属于哪种人？","浪漫的理想主义者|脚踏实地的实干家|清醒的观察者和思考者"],
+["P","你更在意什么？","感受的真实性|行动的有效性|逻辑的自洽性"],
+["T","你最核心的性格特点是？","敏感、共情力强|稳重、耐心、善于坚持|独立、理性、目标感强"],
+["T","遇到挫折时你更多是？","容易被触动需要时间消化|默默扛起责任找办法|分析原因迅速调整策略"],
+["T","你对人际关系的态度？","深度绑定少数人重质不重量|广泛而负责地维护关系|保持适度距离和边界感"],
+["T","童年时期你更倾向于？","沉浸在自己的想象世界里|跟随规则让家长老师放心|过早独立有自己的主见"],
+["T","你对自己的要求是？","做一个真实不虚伪的人|做一个有用值得信赖的人|做一个不断进步超越自己的人"],
+["T","最有幸福感的事情？","和懂你的人安静待着|完成了一件预定的任务|学到了让自己兴奋的认知"],
+["V","做决定时你更依赖？","内心的直觉和情感体验|实际条件和可行性|逻辑分析和事实依据"],
+["V","金钱对你来说是？","实现自由体验的工具|安全感和稳定保障|衡量价值的参考维度"],
+["V","你更欣赏哪种人？","有独特精神世界的人|有担当有执行力的人|有清晰目标和独立思考的人"],
+["V","你最怕变成什么样？","麻木迟钝失去感受力|不负责任不守承诺|停止成长随波逐流"],
+["V","人生理解更接近？","一场体验重在感受|一段旅程重在安顿|一场修行重在成长"],
+["V","什么让你觉得最有意义？","深度地爱过和被爱过|把一件事做到极致|不断拓展认知边界"],
+["D","面对两难选择时？","凭直觉选更舒服的|列出优缺点对比决定|找信任的人讨论"],
+["D","做事的风格是？","一时兴起容易半途而废|先规划再执行坚持到底|判断值不值得再做分配"],
+["D","遇到冲突时？","让情绪过去再谈|直接面对尽快解决|保持理性就事论事"],
+["D","你更擅长什么？","发现问题感知风险|执行方案落地细节|分析问题规划路径"],
+["D","对规则和权威的态度？","不完全服从看情况|尊重规则按章办事|理解逻辑后选择性遵守"],
+["D","如何看待犯错？","很在意反复回想|尽量避开事后补救|重要的是学到什么"],
+["D","面对压力时你？","需要倾诉或独处消化|通过做事转移焦虑|理性拆解一步步解决"],
+["E","如何处理负面情绪？","需要表达出来才能过去|压下去等自己消化|分析来源然后理解它"],
+["E","别人向你倾诉时？","感同身受陪对方体验|给出实际建议和帮助|帮对方理清思路"],
+["E","对关系中的解释怎么看？","不说出来对方不会懂|行动比语言更重要|真正懂不需要解释"],
+["E","你更容易被什么打动？","真诚流露的脆弱|默默付出的行动|深刻独特的见解"],
+["E","感情中最安全的时刻？","对方说出安心的话|对方用行动证明可靠|各自专注也不觉疏离"],
+["E","表达关心的方式是？","倾听和情绪陪伴|行动上的照顾|知识上的支持和启发"],
+["E","什么安慰最有效？","有人懂你为什么难过|有人帮你分担|有人帮你理清为什么"],
+["S","社交能量来自？","小圈子深度交流|共同目标的协作|兴趣思想的碰撞"],
+["S","社交中你通常是？","气氛感知者|组织协调者|观察分析者"],
+["S","选择朋友更看重？","精神情感共鸣|可靠和人品|聪明和见识匹配"],
+["S","群体的存在感来自？","说到别人心坎里|行动力强让人放心|稳定输出有说服力"],
+["S","对社交的态度是？","泛泛之交让你疲惫|适度社交是必需|高质量交流可聊几小时"],
+["S","希望别人怎么看你？","真诚有灵气的人|靠谱值得信赖的人|有想法有见地的人"],
+["S","最舒服的关系模式？","心照不宣的默契|双向奔赴的付出|各自独立互相欣赏"]
+];
+
+for(var di=0;di<data.length;di++){
+  var d=data[di];
+  var opts=d[2].split("|");
+  var arr=[];
+  for(var j=0;j<3;j++){arr.push({t:opts[j],s:labels[j]});}
+  q.push({c:d[0],q:d[1],o:arr});
+  ans.push(-1);
+}
+for(var k in cn){catSc[k]={A:0,B:0,C:0};}
+
+
+var up=new URLSearchParams(window.location.search);
+if(up.get("lock")==="true"){
+  if(sessionStorage.getItem("_used")){
+    document.getElementById("welcome").innerHTML='<div class="lm"><div class="lk">🔒</div><h2>该链接已被使用</h2><p>本测试仅供单人单次使用。<br>如需再次请购买新链接。</p></div>';
+    var sb=document.getElementById("startBtn");if(sb)sb.style.display="none";
+  }
+  sessionStorage.setItem("_used","1");
+}
+
+// Helper function removed - elements accessed by ID directly
+
+document.getElementById("startBtn").onclick=function(){
+  welcome.classList.remove("active");
+  setTimeout(function(){quiz.classList.add("active");loadQ();},300);
+};
+
+function loadQ(){
+  if(idx>=q.length){analyze();return;}
+  var cur=q[idx];
+  pf.style.width=((idx+1)/q.length*100)+"%";
+  pt.innerHTML="Q. "+(idx+1)+" / "+q.length;
+  pp.innerHTML=Math.round((idx+1)/q.length*100)+"%";
+  qcat.innerHTML=cn[cur.c];
+  qt.innerHTML=(idx+1)+". "+cur.q;
+  var g=og;g.innerHTML="";
+  for(var j=0;j<cur.o.length;j++){
+    var d=document.createElement("div");
+    d.className="op";
+    d.innerHTML=cur.o[j].t;
+    d.setAttribute("data-idx",j);
+    d.addEventListener("click",(function(s,ca,i){return function(){pick(s,ca,i);}})(cur.o[j].s,cur.c,j));
+    g.appendChild(d);
+  }
+  if(ans[idx]>=0){
+    var opts=g.querySelectorAll(".op");
+    if(opts[ans[idx]])opts[ans[idx]].classList.add("op-sel");
+  }
+  var nb=document.createElement("div");nb.className="nv";
+  var prevBtn='<div></div>';
+  if(idx>0)prevBtn='<button class="btn btn-sm btn-outline" onclick="prevQ()">← 上一题</button>';
+  var canGo=ans[idx]>=0;
+  var nextBtn='<button class="btn btn-sm'+(canGo?'" onclick="goNext()">确认 →':' btn-gray" onclick="goNext()">下一题 →')+'</button>';
+  nb.innerHTML=prevBtn+nextBtn;g.appendChild(nb);
+}
+
+function pick(s,ca,i){
+  ans[idx]=i;
+  var opts=og.querySelectorAll(".op");
+  for(var k=0;k<opts.length;k++){opts[k].classList.remove("op-sel");}
+  if(opts[i])opts[i].classList.add("op-sel");
+  setTimeout(function(){
+    sc[s]++;idx++;
+    if(catSc[ca])catSc[ca][s]++;
+    loadQ();
+  },200);
+}
+
+function prevQ(){if(idx>0){idx--;loadQ();}}
+
+function goNext(){
+  if(ans[idx]>=0){
+    var c=q[idx].c;var s=q[idx].o[ans[idx]].s;
+    sc[s]++;idx++;if(catSc[c])catSc[c][s]++;loadQ();
+  }else{alert("请先选择一个答案");}
+}
+
+function analyze(){
+  quiz.classList.remove("active");
+  loading.classList.add("active");
+  var tx=["分析你的人格特质...","解读性格底色与气质类型...","提取深层价值观念...","匹配经典文学角色原型...","生成多维度深度报告...","融入心理学理论框架...","构建你的专属恋爱人格画像..."];
+  var ti=0;
+  var iv=setInterval(function(){if(ti<tx.length){lt.innerHTML=tx[ti];ti++;}},600);
+  setTimeout(function(){clearInterval(iv);showResult();},4200);
+}
+
+function showResult(){
+  loading.classList.remove("active");
+  result.classList.add("active");
+  var ft="A";if(sc.B>sc.A)ft="B";if(sc.C>sc[ft])ft="C";
+  var d=rd[ft];
+  ri.innerHTML=d.ic;
+  rt.innerHTML=d.nm;
+  rtype.innerHTML=d.tp;
+  var sr=srow;sr.innerHTML="";
+  var mx=Math.max(sc.A,sc.B,sc.C,1);
+  var keys=["A","B","C"],nms={A:"感受型",B:"务实型",C:"思考型"};
+  for(var k=0;k<3;k++){
+    var key=keys[k];var ht=Math.max(sc[key]/mx*100,3);
+    sr.innerHTML+='<div class="ri2"><div class="rn">'+nms[key]+'</div><div class="rbar"><div class="rbf '+key.toLowerCase()+'" style="height:'+ht+'%"></div></div><div class="rv">'+sc[key]+'</div></div>';
+  }
+  // --- ???????? ---
+  var dimKeys=["P","T","V","D","E","S"];
+  var dimNames={P:"????",T:"????",V:"????",D:"????",E:"????",S:"????"};
+  var dimIcons={P:"??",T:"??",V:"??",D:"??",E:"??",S:"??"};
+  var dimColors={A:"#c472a2",B:"#b8860b",C:"#5a8fa5"};
+  var dimTypeLabels={A:"???",B:"???",C:"???"};
+  var dimHtml='<div class="sec"><div class="st">?? ????????</div>';
+  dimHtml+='<div class="sc" style="padding:8px 10px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">';
+  for(var di=0;di<dimKeys.length;di++){
+    var dk=dimKeys[di];
+    var c=catSc[dk]||{A:0,B:0,C:0};
+    var total=c.A+c.B+c.C;
+    var mA="";if(c.A>=c.B&&c.A>=c.C)mA="???";else if(c.B>=c.C)mA="???";else mA="???";
+    dimHtml+='<div style="background:#faf8f5;border:1px solid #e8e2da;border-radius:8px;padding:8px 10px">';
+    dimHtml+='<div style="font-weight:600;font-size:12px;margin-bottom:4px;color:#2d2a24">'+dimIcons[dk]+" "+dimNames[dk]+'</div>';
+    dimHtml+='<div style="display:flex;gap:4px;height:20px;background:#efede9;border-radius:4px;overflow:hidden;margin-bottom:3px">';
+    if(total>0){
+      var pA=Math.round(c.A/total*100);var pB=Math.round(c.B/total*100);var pC=Math.round(c.C/total*100);
+      dimHtml+='<div style="width:'+pA+'%;background:#c472a2;min-width:2px"></div>';
+      dimHtml+='<div style="width:'+pB+'%;background:#b8860b;min-width:2px"></div>';
+      dimHtml+='<div style="width:'+pC+'%;background:#5a8fa5;min-width:2px;flex:1"></div>';
+    }
+    dimHtml+='</div>';
+    dimHtml+='<div style="display:flex;justify-content:space-between;font-size:10px;color:#5a534a">';
+    dimHtml+='<span>?? '+c.A+'</span><span>?? '+c.B+'</span><span>?? '+c.C+'</span>';
+    dimHtml+='</div><div style="font-size:10px;color:#9168b0;margin-top:2px">??: '+mA+'</div></div>';
+  }
+  dimHtml+='</div></div></div>';
+
+  var secs=[
+    {id:"s1",ti:"🧠 大五人格特质分析",k:"bg5",tp:"sc"},
+    {id:"s2",ti:"🎨 气质类型与性格底色",k:"qt",tp:"sc"},
+    {id:"s3",ti:"⚖️ 深层价值观念",k:"v",tp:"sc"},
+    {id:"s4",ti:"🔄 决策与应对模式",k:"ds",tp:"sc"},
+    {id:"s5",ti:"💞 情感依恋模式",k:"ea",tp:"sc"},
+    {id:"s6",ti:"🔬 吸引力心理学机制",k:"ar",tp:"sc"},
+    {id:"s7",ti:"💬 亲密关系行为画像",k:"ri",tp:"sc"},
+    {id:"s8",ti:"📖 经典文学角色对照",k:"lit",tp:"sc"},
+    {id:"s9",ti:"⚠️ 关系盲区与成长点",k:"bl",tp:"ul"},
+    {id:"s10",ti:"🌱 自我成长建议",k:"adv",tp:"ul"},
+    {id:"s11",ti:"🤝 适配恋人模板",k:"pair",tp:"sc"},
+    {id:"s12",ti:"💎 金句",k:"qo",tp:"qb"}
+  ];
+  var rh="";
+  for(var k=0;k<secs.length;k++){
+    var se=secs[k];
+    rh+='<div class="sec"><div class="st">'+se.ti+'</div>';
+    if(se.tp==="qb")rh+='<div class="qb" id="'+se.id+'"></div>';
+    else if(se.tp==="ul")rh+='<div class="sc"><ul id="'+se.id+'"></ul></div>';
+    else rh+='<div class="sc" id="'+se.id+'"></div>';
+    rh+='</div>';
+  }
+  resultContent.innerHTML=rh;
+  function fill(id,k,tp){
+    var v=d[k];if(!v)return;
+    var el=document.getElementById(id);if(!el)return;
+    if(tp==="ul"){
+      var a=v.split("|");var h="";
+      for(var i=0;i<a.length;i++){if(a[i].trim())h+="<li>"+a[i].trim()+"</li>";}
+      el.innerHTML=h;
+    }else if(tp==="qb"){
+      var parts=v.split("||");var h="";
+      for(var i=0;i<parts.length;i++){
+        if(i>0)h+="<br>";h+="<p>"+parts[i].trim()+"</p>";
+      }
+      el.innerHTML=h;
+    }else{
+      var lines=v.split("\n");var h="";
+      for(var i=0;i<lines.length;i++){if(lines[i].trim())h+="<p>"+lines[i].trim()+"</p>";}
+      el.innerHTML=h;
+    }
+  }
+  for(var k=0;k<secs.length;k++){fill(secs[k].id,secs[k].k,secs[k].tp);}
+  app.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+shareBtn.onclick=function(){
+  var s=document.createElement("style");
+  s.textContent='@media print{body *{visibility:hidden!important}#result,#result *{visibility:visible!important}#result{position:absolute;left:0;top:0;width:100%;padding:20px;max-width:600px}.nv,.sb,.ph,.pb,#qcat{display:none!important}}';
+  document.head.appendChild(s);
+  setTimeout(function(){window.print();document.head.removeChild(s);},200);
+};
+</script>
+</body>
+</html>
